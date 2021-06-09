@@ -32,7 +32,7 @@ namespace API2SQL
                 AllRequests.Rootobject result = JsonConvert.DeserializeObject<AllRequests.Rootobject>(rawResponse);
                 Console.WriteLine("Data Deserialized...");
 
-                using (var db = new TransitionContext())
+                using (var db = new TransitionDbContext())
                 {
                     //db.RequestDetails.RemoveRange(db.RequestDetails);
 
